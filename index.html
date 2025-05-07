@@ -51,7 +51,39 @@
             We focus on teaching our students the fundamentals of the latest and
             greatest technology to prepare them for their first dev role.
           </p>
-          <button class="btn btn-primary btn-lg">Start the Enrollment</button>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start the Enrollment</button>
+          <!-- modal options  starts-->
+          <div class="modal fade" id="enroll" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- header sections  -->
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Enroll to our bootcamp now</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+                </div>
+
+                <!-- modal body sections  -->
+
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Your Name: </label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Your Mail: </label>
+                      <input type="email" name="" id=" message-text" class="form-control" >
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal options ends -->
         </div>
         <img
           class="img-fluid w-50 d-none d-sm-block"
